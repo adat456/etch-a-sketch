@@ -1,0 +1,74 @@
+html, body, div, h1, h2, h3, h4, h5, h6, img {
+	margin: 0;
+	padding: 0;
+	border: 0.5px;
+    
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1 {
+    font-family: 'LmentMedium', sans-serif;
+    font-size: 50px;
+    padding: 15px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    border-style: hidden;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.control button {
+    padding: 20px;
+    box-shadow: -3px -3px;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-btn-container {
+    display: grid;
+    grid-template: 3fr 1fr / 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    height: 40%;
+}
+
+[class$="-btns"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+[class$="-btns"]>h3 {
+    text-align: center;
+}
+
+.resizer {
+    grid-column: 1 / span 2;
+}
