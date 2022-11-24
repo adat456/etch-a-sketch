@@ -72,3 +72,41 @@ button:hover {
 .resizer {
     grid-column: 1 / span 2;
 }
+
+#submit-btn {
+    display: inline;
+}
+
+
+
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-field {
+    height: 40vw;
+    width: 40vw;
+    border-style: solid;
+    display: grid;
+}
+
+.grid-field div {
+    border-style: solid;
+}
+
+.grid-btns {
+    width: 40vw;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.grid-btns button {
+    width: 10vw;
+    padding: 8px;
+}

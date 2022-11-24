@@ -4,33 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-A-Sketch</title>
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lment" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link href="./styles.css" rel="stylesheet">
+
+    <script src="./script.js" rel="script" defer></script>
+
+    <title>Magna Doodle</title>
 </head>
 <body>
     <div class="container">
         <div class="control">
-            <h1 class="page-title">ETCH A SKETCH</h1>
+            <h1 class="page-title">MAGNA DOODLE</h1>
             <div class="style-btn-container">
                 <div class="mode-btns">
                     <h3 class="mode-title">MODE</h3>
-                    <button class="click-btn">click</button>
-                    <button class="arrow-btn">arrow</button>
+                    <button class="click-btn">mouse click</button>
+                    <button class="arrow-btn">arrow keys</button>
                     <button class="hover-btn">hover</button>
                 </div>
-                <div class="color-btns"></div>
+                <div class="color-btns">
                     <h3 class="color-title">COLOR</h3>
                     <button class="black-btn">black</button>
-                    <button class="color-btn">color</button>
+                    <button class="color-btn">etcher's choice</button>
                     <button class="random-btn">random</button>
-                <div class="resizer"></div>
+                </div>
+                <div class="resizer">
                     <h3 class="resizer-title">RESIZE GRID</h3>
+                    <form>
+                        <label for="numTracks"></label>
+                        <input type="text" id="numTracks">
+                        <button type="submit" id="submit-btn"></button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="display">
-            <div class="grid"></div>
+            <div class="grid-field"></div>
             <div class="grid-btns">
-                <button class="clear-btn"></button>
-                <button class="save-btn"></button>
+                <button class="clear-btn"> clear</button>
+                <button class="save-btn">save</button>
             </div>
         </div>
     </div>
